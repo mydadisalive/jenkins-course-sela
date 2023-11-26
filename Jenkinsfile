@@ -2,9 +2,7 @@ pipeline {
     agent any
 
     options {
-        scm {
             pollSCM('*/1 * * * *')
-        }
     }
     
     stages {
