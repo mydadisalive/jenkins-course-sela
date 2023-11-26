@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     options {
-        // Set up SCM polling to check for changes every minute
-        pollSCM('*/1 * * * *')
+        scm {
+            pollSCM('*/1 * * * *')
+        }
     }
     
     stages {
